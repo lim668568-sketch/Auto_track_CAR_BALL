@@ -34,3 +34,10 @@ car_ball\main.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h
 car_ball\main.o: ../Core/Inc/tim.h
 car_ball\main.o: ../Core/Inc/usart.h
 car_ball\main.o: ../Core/Inc/gpio.h
+car_ball\main.o: ../Control/control.h
+car_ball\main.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+car_ball\main.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+car_ball\main.o: ../Hardware/motor.h
+car_ball\main.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\math.h
+car_ball\main.o: ../Hardware/Camera.h
+car_ball\main.o: ../Hardware/Key.h

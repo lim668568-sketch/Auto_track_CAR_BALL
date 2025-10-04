@@ -57,6 +57,9 @@ void Error_Handler(void);
 /* USER CODE END EFP */
 
 /* Private defines -----------------------------------------------------------*/
+#define K2_Pin GPIO_PIN_2
+#define K2_GPIO_Port GPIOA
+#define K2_EXTI_IRQn EXTI2_IRQn
 #define Right2_Pin GPIO_PIN_13
 #define Right2_GPIO_Port GPIOE
 #define Right1_Pin GPIO_PIN_11
@@ -65,16 +68,16 @@ void Error_Handler(void);
 #define Left1_GPIO_Port GPIOD
 #define Left2_Pin GPIO_PIN_10
 #define Left2_GPIO_Port GPIOD
+#define K3_Pin GPIO_PIN_11
+#define K3_GPIO_Port GPIOD
+#define K3_EXTI_IRQn EXTI15_10_IRQn
 #define PWM_Left_Pin GPIO_PIN_14
 #define PWM_Left_GPIO_Port GPIOD
 #define PWM_Right_Pin GPIO_PIN_15
 #define PWM_Right_GPIO_Port GPIOD
-#define K3_Pin GPIO_PIN_5
-#define K3_GPIO_Port GPIOD
-#define K2_Pin GPIO_PIN_6
-#define K2_GPIO_Port GPIOD
 #define K1_Pin GPIO_PIN_7
 #define K1_GPIO_Port GPIOD
+#define K1_EXTI_IRQn EXTI9_5_IRQn
 
 /* USER CODE BEGIN Private defines */
 
