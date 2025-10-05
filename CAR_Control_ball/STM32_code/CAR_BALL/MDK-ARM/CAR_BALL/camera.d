@@ -39,3 +39,6 @@ car_ball\camera.o: ../Core/Inc/usart.h
 car_ball\camera.o: ..\Hardware\motor.h
 car_ball\camera.o: ../Core/Inc/gpio.h
 car_ball\camera.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\math.h
+car_ball\camera.o: ../Control/control.h
+car_ball\camera.o: ../Hardware/Camera.h
+car_ball\camera.o: ../Hardware/Key.h
