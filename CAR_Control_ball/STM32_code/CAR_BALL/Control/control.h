@@ -11,6 +11,7 @@
 #include <math.h>
 #include "Camera.h"
 #include "Key.h"
+#include "PID.h"
 
 void ALL_Init(void);
 void output_data_update(void);
