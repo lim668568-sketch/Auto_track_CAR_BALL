@@ -42,3 +42,5 @@ car_ball\camera.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\math.h
 car_ball\camera.o: ../Control/control.h
 car_ball\camera.o: ../Hardware/Camera.h
 car_ball\camera.o: ../Hardware/Key.h
+car_ball\camera.o: ../Control/PID.h
+car_ball\camera.o: ../Control/control.h

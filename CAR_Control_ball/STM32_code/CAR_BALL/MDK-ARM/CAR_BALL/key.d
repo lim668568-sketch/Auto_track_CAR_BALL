@@ -43,3 +43,5 @@ car_ball\key.o: ..\Hardware\Camera.h
 car_ball\key.o: ../Control/control.h
 car_ball\key.o: ../Hardware/Camera.h
 car_ball\key.o: ../Hardware/Key.h
+car_ball\key.o: ../Control/PID.h
+car_ball\key.o: ../Control/control.h

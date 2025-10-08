@@ -55,6 +55,14 @@ void Received_by_Camera(uint8_t received_data)
 			}
 			x_output=handle_XorH(x)-10000;
 			h_output=handle_XorH(h)-10000;//低位在前解析数据
+			// if(x_output<-150||x_output>130)
+			// {
+			// 	x_output=x_output;
+			// }
+			// else
+			// {
+			// 	x_output=50;
+			// }
 		}
 //		else 
 //		{

@@ -68,6 +68,8 @@ virtualFolder:
         - path: ../Control/PID.h
         - path: ../Control/control.h
         - path: ../Control/control.c
+        - path: ../Control/delay.c
+        - path: ../Control/delay.h
       folders: []
     - name: ::CMSIS
       files: []

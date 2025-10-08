@@ -1,7 +1,7 @@
 #include "motor.h"
 
 #define Speed_MAX 99
-#define Speed_MIN 20
+#define Speed_MIN 10
 
 void PWM_on(void)
 {
@@ -53,4 +53,6 @@ void speed_control(int16_t speed1, int16_t speed2)
 
     __HAL_TIM_SET_COMPARE(&htim4, TIM_CHANNEL_3, speed1);
     __HAL_TIM_SET_COMPARE(&htim4, TIM_CHANNEL_4, speed2);
+    printf("Init.speed_left.val=%d\xff\xff\xff",speed1);
+    printf("Init.speed_right.val=%d\xff\xff\xff",speed2);
 }
