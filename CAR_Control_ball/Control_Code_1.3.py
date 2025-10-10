@@ -9,16 +9,16 @@ import image
 import ustruct
 
 # 需要参数
-K = 500  # 需要试验修改
+K = 1000  # 需要试验修改
 #templates = ["3.pgm", "4.pgm", "5.pgm", "6.pgm"]  # 保存多个模板
-length = 20  # 目标距离对应的数字
+length = 40  # 目标距离对应的数字
 #Key = 0     # 控制指令
 #last_key = 0  # 记录上一次的Key值
 last_length = 0
 
 # 目标物识别阈值
 #test_threshold = (14, 100, -65, -8, 19, 127)
-test_threshold =(45, 96, -25, -7, -7, 67)
+test_threshold =(40, 100, -57, 1, 31, 127)
 size_threshold = 2000  # 最近距离设置
 
 # PID控制器初始化
@@ -155,6 +155,8 @@ while True:
                 Lm = (max_blob[2] + max_blob[3]) / 2  # 直径像素
                 target_Lm = K / length if length != 0 else Lm  # 目标直径像素
                 target_area = max(target_Lm * target_Lm * 3.1415926, size_threshold)
+
+                print("Lm:",Lm)
                 # current_length=abs(K/Lm)
 
                 # PID计算

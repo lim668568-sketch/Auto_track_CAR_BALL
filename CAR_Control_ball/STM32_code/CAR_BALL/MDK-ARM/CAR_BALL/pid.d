@@ -44,3 +44,4 @@ car_ball\pid.o: ../Hardware/Camera.h
 car_ball\pid.o: ../Control/control.h
 car_ball\pid.o: ../Hardware/Key.h
 car_ball\pid.o: ..\Control\PID.h
+car_ball\pid.o: ..\Control\delay.h

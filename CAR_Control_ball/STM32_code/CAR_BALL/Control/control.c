@@ -61,7 +61,7 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
 //主函数文件的初始化函数
 void ALL_Init(void)
 {
-	PID_Init(&pidx, 0.04, 0.01, 0.005, 1, 5);//初始化PID参数
+	PID_Init(&pidx, 0.005, 0.01, 0.005, 1, 5);//初始化PID参数
 	PWM_on();
 	HAL_UART_Receive_IT(&huart3, &received_data, 1);//开启串口接收摄像头数据
 	__HAL_TIM_CLEAR_IT(&htim6, TIM_IT_UPDATE);

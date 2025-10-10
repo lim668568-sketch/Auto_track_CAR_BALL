@@ -1,7 +1,7 @@
 Dependencies for Project 'CAR_BALL', Target 'CAR_BALL': (DO NOT MODIFY !)
 CompilerVersion: 5060960::V5.06 update 7 (build 960)::.\ARMCC
 F (startup_stm32f427xx.s)(0x68E2292A)(--cpu Cortex-M4.fp.sp -g --apcs=interwork --pd "__MICROLIB SETA 1"-I.\RTE\_CAR_BALL-IC:\Users\13613\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\13613\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include--pd "__UVISION_VERSION SETA 538" --pd "_RTE_ SETA 1" --pd "STM32F427xx SETA 1" --pd "_RTE_ SETA 1"--list startup_stm32f427xx.lst --xref -o car_ball\startup_stm32f427xx.o --depend car_ball\startup_stm32f427xx.d)
-F (../Core/Src/main.c)(0x68E51224)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Hardware -I ../Control-I.\RTE\_CAR_BALL-IC:\Users\13613\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\13613\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="538" -D_RTE_ -DSTM32F427xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F427xx-o car_ball\main.o --omf_browse car_ball\main.crf --depend car_ball\main.d)
+F (../Core/Src/main.c)(0x68E864DA)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Hardware -I ../Control-I.\RTE\_CAR_BALL-IC:\Users\13613\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\13613\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="538" -D_RTE_ -DSTM32F427xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F427xx-o car_ball\main.o --omf_browse car_ball\main.crf --depend car_ball\main.d)
 I (../Core/Inc/main.h)(0x68E0FFEE)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x67421FF6)
 I (../Core/Inc/stm32f4xx_hal_conf.h)(0x68DE2B40)
@@ -36,7 +36,7 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x67421FF6)
 I (../Core/Inc/tim.h)(0x68E22926)
 I (../Core/Inc/usart.h)(0x68DE2B40)
 I (../Core/Inc/gpio.h)(0x68DE2B3E)
-I (../Control/control.h)(0x68E5483A)
+I (../Control/control.h)(0x68E65270)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x60252374)
 I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x6025237E)
 I (../Hardware/motor.h)(0x68DE3142)
@@ -44,6 +44,7 @@ I (C:\Keil_v5\ARM\ARMCC\include\math.h)(0x60252378)
 I (../Hardware/Camera.h)(0x68E24798)
 I (../Hardware/Key.h)(0x68E0FAB4)
 I (../Control/PID.h)(0x68E5434F)
+I (../Control/delay.h)(0x68E64A95)
 F (../Core/Src/gpio.c)(0x68E22926)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Hardware -I ../Control-I.\RTE\_CAR_BALL-IC:\Users\13613\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\13613\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="538" -D_RTE_ -DSTM32F427xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F427xx-o car_ball\gpio.o --omf_browse car_ball\gpio.crf --depend car_ball\gpio.d)
 I (../Core/Inc/gpio.h)(0x68DE2B3E)
 I (../Core/Inc/main.h)(0x68E0FFEE)
@@ -735,7 +736,7 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x67421FF6)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h)(0x67421FF6)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h)(0x67421FF6)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x67421FF6)
-F (..\Hardware\motor.c)(0x68E64282)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Hardware -I ../Control-I.\RTE\_CAR_BALL-IC:\Users\13613\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\13613\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="538" -D_RTE_ -DSTM32F427xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F427xx-o car_ball\motor.o --omf_browse car_ball\motor.crf --depend car_ball\motor.d)
+F (..\Hardware\motor.c)(0x68E67CC4)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Hardware -I ../Control-I.\RTE\_CAR_BALL-IC:\Users\13613\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\13613\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="538" -D_RTE_ -DSTM32F427xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F427xx-o car_ball\motor.o --omf_browse car_ball\motor.crf --depend car_ball\motor.d)
 I (..\Hardware\motor.h)(0x68DE3142)
 I (../Core/Inc/main.h)(0x68E0FFEE)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x67421FF6)
@@ -813,10 +814,11 @@ I (..\Hardware\motor.h)(0x68DE3142)
 I (../Core/Inc/gpio.h)(0x68DE2B3E)
 I (C:\Keil_v5\ARM\ARMCC\include\math.h)(0x60252378)
 I (..\Hardware\Camera.h)(0x68E24798)
-I (../Control/control.h)(0x68E5483A)
+I (../Control/control.h)(0x68E65270)
 I (../Hardware/Camera.h)(0x68E24798)
 I (../Hardware/Key.h)(0x68E0FAB4)
 I (../Control/PID.h)(0x68E5434F)
+I (../Control/delay.h)(0x68E64A95)
 F (..\Hardware\Key.h)(0x68E0FAB4)()
 F (..\Hardware\Camera.c)(0x68E63E70)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Hardware -I ../Control-I.\RTE\_CAR_BALL-IC:\Users\13613\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\13613\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="538" -D_RTE_ -DSTM32F427xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F427xx-o car_ball\camera.o --omf_browse car_ball\camera.crf --depend car_ball\camera.d)
 I (..\Hardware\Camera.h)(0x68E24798)
@@ -858,10 +860,11 @@ I (../Core/Inc/usart.h)(0x68DE2B40)
 I (..\Hardware\motor.h)(0x68DE3142)
 I (../Core/Inc/gpio.h)(0x68DE2B3E)
 I (C:\Keil_v5\ARM\ARMCC\include\math.h)(0x60252378)
-I (../Control/control.h)(0x68E5483A)
+I (../Control/control.h)(0x68E65270)
 I (../Hardware/Camera.h)(0x68E24798)
 I (../Hardware/Key.h)(0x68E0FAB4)
 I (../Control/PID.h)(0x68E5434F)
+I (../Control/delay.h)(0x68E64A95)
 F (..\Hardware\Camera.h)(0x68E24798)()
 F (..\Control\PID.c)(0x68E543CA)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Hardware -I ../Control-I.\RTE\_CAR_BALL-IC:\Users\13613\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\13613\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="538" -D_RTE_ -DSTM32F427xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F427xx-o car_ball\pid.o --omf_browse car_ball\pid.crf --depend car_ball\pid.d)
 I (..\Control\PID.h)(0x68E5434F)
@@ -903,14 +906,15 @@ I (../Core/Inc/usart.h)(0x68DE2B40)
 I (../Hardware/motor.h)(0x68DE3142)
 I (../Core/Inc/gpio.h)(0x68DE2B3E)
 I (C:\Keil_v5\ARM\ARMCC\include\math.h)(0x60252378)
-I (..\Control\control.h)(0x68E5483A)
+I (..\Control\control.h)(0x68E65270)
 I (../Hardware/Camera.h)(0x68E24798)
-I (../Control/control.h)(0x68E5483A)
+I (../Control/control.h)(0x68E65270)
 I (../Hardware/Key.h)(0x68E0FAB4)
+I (..\Control\delay.h)(0x68E64A95)
 F (..\Control\PID.h)(0x68E5434F)()
-F (..\Control\control.h)(0x68E5483A)()
-F (..\Control\control.c)(0x68E64455)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Hardware -I ../Control-I.\RTE\_CAR_BALL-IC:\Users\13613\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\13613\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="538" -D_RTE_ -DSTM32F427xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F427xx-o car_ball\control.o --omf_browse car_ball\control.crf --depend car_ball\control.d)
-I (..\Control\control.h)(0x68E5483A)
+F (..\Control\control.h)(0x68E65270)()
+F (..\Control\control.c)(0x68E87ADA)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Hardware -I ../Control-I.\RTE\_CAR_BALL-IC:\Users\13613\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\13613\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="538" -D_RTE_ -DSTM32F427xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F427xx-o car_ball\control.o --omf_browse car_ball\control.crf --depend car_ball\control.d)
+I (..\Control\control.h)(0x68E65270)
 I (../Core/Inc/main.h)(0x68E0FFEE)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x67421FF6)
 I (../Core/Inc/stm32f4xx_hal_conf.h)(0x68DE2B40)
@@ -950,9 +954,10 @@ I (../Hardware/motor.h)(0x68DE3142)
 I (../Core/Inc/gpio.h)(0x68DE2B3E)
 I (C:\Keil_v5\ARM\ARMCC\include\math.h)(0x60252378)
 I (../Hardware/Camera.h)(0x68E24798)
-I (../Control/control.h)(0x68E5483A)
+I (../Control/control.h)(0x68E65270)
 I (../Hardware/Key.h)(0x68E0FAB4)
 I (..\Control\PID.h)(0x68E5434F)
+I (..\Control\delay.h)(0x68E64A95)
 F (..\Control\delay.c)(0x68E64A95)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Hardware -I ../Control-I.\RTE\_CAR_BALL-IC:\Users\13613\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\13613\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="538" -D_RTE_ -DSTM32F427xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F427xx-o car_ball\delay.o --omf_browse car_ball\delay.crf --depend car_ball\delay.d)
 I (..\Control\delay.h)(0x68E64A95)
 I (../Core/Inc/main.h)(0x68E0FFEE)
@@ -993,9 +998,9 @@ I (../Core/Inc/usart.h)(0x68DE2B40)
 I (../Hardware/motor.h)(0x68DE3142)
 I (../Core/Inc/gpio.h)(0x68DE2B3E)
 I (C:\Keil_v5\ARM\ARMCC\include\math.h)(0x60252378)
-I (..\Control\control.h)(0x68E5483A)
+I (..\Control\control.h)(0x68E65270)
 I (../Hardware/Camera.h)(0x68E24798)
-I (../Control/control.h)(0x68E5483A)
+I (../Control/control.h)(0x68E65270)
 I (../Hardware/Key.h)(0x68E0FAB4)
 I (..\Control\PID.h)(0x68E5434F)
 F (..\Control\delay.h)(0x68E64A95)()
