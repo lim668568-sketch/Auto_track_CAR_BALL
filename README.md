@@ -1,5 +1,5 @@
 # Auto_track_CAR_BALL
-基于Maxicam和STM32F427的**自动追踪网球**的小车
+基于openmv和STM32F427的**自动追踪网球**的小车
 ## Control_Code_1.3.py
 摄像头程序，包括：**单目测距，网球阈值识别，自定义通信数据包，PID偏差值等**
 ## Screen.HMI
